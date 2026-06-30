@@ -1,8 +1,0 @@
-
-=== REPORTE DE CALIDAD DEL AIRE ===
-Zona: Zona Sur                  | PM2.5:  50.50 ug/m3 | Nivel: DANINO
-Zona: Centro Historico          | PM2.5:   7.50 ug/m3 | Nivel: NORMAL
-Zona: Centro Norte              | PM2.5:   5.50 ug/m3 | Nivel: NORMAL
-Zona: Zona Norte                | PM2.5:   3.50 ug/m3 | Nivel: NORMAL
-Zona: Valles Aledanos           | PM2.5:   1.50 ug/m3 | Nivel: NORMAL
-====================================

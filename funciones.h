@@ -71,7 +71,9 @@ typedef struct
 } RegistroHistorico;
 
 int menu();
+int seleccionarZona(void);
 float validarFloatRango(float a, float b);
+int validarIntRango(int a, int b);
 void leerCadena(char *cadena, int n);
 
 void inicializarZonas(Zona zonas[]);
@@ -81,6 +83,7 @@ void capturarMeteorologiaConsola(Meteorologia *met);
 
 void guardarRegistro(RegistroHistorico *reg, int zonaId);
 float calcularPromedioHistorico(int zonaId);
+void verHistoricoZona(int zonaId);
 
 float calcularPrediccion(Zona *zona, Meteorologia *met);
 
@@ -88,7 +91,11 @@ void clasificarNivel(Prediccion *pred);
 void listarZonas(Zona zonas[], int n);
 
 void generarRecomendaciones(Prediccion *pred, Zona *zona);
+void mostrarAlertasRecomendaciones(Zona zonas[], Prediccion preds[], int n);
+void exportarReporte(Zona zonas[], Prediccion preds[], int n, int zonaId);
 
-void exportarReporte(Zona zonas[], Prediccion preds[], int n);
+const char *seleccionarContaminanteCritico(Zona *zona);
+void reiniciarHistorialZona(int zonaId);
+int editarRegistroHistorico(int zonaId);
 
 #endif
